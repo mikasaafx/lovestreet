@@ -91,8 +91,9 @@ main .content-satu {
 }
 
 main .content .content-description {
-  flex: 1 1;
+  flex: 1.5;
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 main .content .content-description .title {
@@ -103,10 +104,10 @@ main .content .content-description .title {
 main .content .content-description p {
 	font-size: 1.2rem;
 	line-height: 1.7rem;
-	margin-top: 2em;
+	margin-top: 1.5rem;
 }
 
-main .content .content-description button {
+/*main .content .content-description button {
 	padding: 0.5rem 1.5rem;
 	border: 3px solid transparent;
 	border-radius: 999px;
@@ -119,14 +120,37 @@ main .content .content-description button {
 	color: white;
 	cursor: pointer;
 	transition: all 0.15s ease-in;
-	margin-top: 2rem;
+	margin-top: 5px;
+}*/
+
+main .content .content-description a {
+	padding: 0.5rem 1.5rem;
+	border: 3px solid transparent;
+	border-radius: 999px;
+	margin-block-start: 1rem;
+	background-color: #0C1844;
+	font-family: 'Quicksand', sans-serif;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 700;
+	color: white;
+	cursor: pointer;
+	transition: all 0.15s ease-in;
+	margin-top: 5px;
+	text-decoration: none;
 }
 
-main .content .content-description button:hover {
+main .content .content-description a:hover {
 	background-color: transparent;
 	border: 3px solid #2d3e50;
 	color: #2d3e50;
 }
+
+/*main .content .content-description button:hover {
+	background-color: transparent;
+	border: 3px solid #2d3e50;
+	color: #2d3e50;
+}*/
 
 main .content .content-image {
 	flex: 1;
@@ -135,12 +159,13 @@ main .content .content-image {
 }
 
 main .content .content-image img {
-	width: 300px;
+	width: 280px;
 	min-width: 250px;
 	margin: auto;
 	border-radius: 20%;
-	margin-right: 70px;
-	margin-top: 6rem;
+/*	margin-right: 5rem;*/
+	margin-left: 6rem;
+	margin-top: 9rem;
 }
 
 /*section .contact {
@@ -150,8 +175,9 @@ main .content .content-image img {
 
 .about {
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 800px;
 	justify-content: center;
+	text-align: justify;
 	margin-top: 2.5rem;
 /*	scroll-padding-top: 5rem;*/
 }
@@ -163,10 +189,67 @@ main .content .content-image img {
 .about h1 {
 /*	max-width: 500px;*/
 	text-align: center;
-	padding-top: 2rem;
+	padding-top: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.layanan-kami {
+padding-top: 1rem;
+}
+
+.layanan-kami h1 {
+	text-align: center;
+/*	margin-top: 3rem;*/
 }
 
 .services {
+		max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+    margin-left: 5rem;
+    margin-right: 5rem;
+/*    flex-grow: 1;*/
+}
+
+.service {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    padding: 1.5em;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.2s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+    border-radius: 20%;
+}
+
+.service h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.service p {
+    color: #555;
+}
+
+/*.services {
 	max-width: 1000px;
 	margin: 0 auto;
 	text-align: center;
@@ -192,15 +275,18 @@ main .content .content-image img {
 .services .service-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
-}
+}*/
 
 .container {
 /*	font-family: 'Quicksand', sans-serif;*/
   margin: 0 auto;
   padding: 4rem;
-  width: 1000px;
+  justify-content: center;
 }
 
+.accordion {
+  max-width: 800px;
+}
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -274,7 +360,7 @@ main .content .content-image img {
 }
 
 .accordion button[aria-expanded='true'] {
-  color: #03b5d2;
+  color: black;
 }
 .accordion button[aria-expanded='true'] .icon::after {
   width: 0;
@@ -302,7 +388,7 @@ main .content .content-image img {
 .contact h1 {
 	text-align: center;
 	font-size: 2em;
-	padding-top: 1.5rem;
+	padding-top: 1rem;
 }
 
 .contact form {
