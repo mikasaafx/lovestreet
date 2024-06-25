@@ -58,14 +58,16 @@ header.navbar-container .nav-list a {
 	border-radius: 999px;
 	text-decoration: none;
 	font-size: 1.05rem;
-	font-weight: 500;
+	font-weight: 650;
 	color: white;
 	transition: all 0.3s ease-in-out;
 }
 
-header.navbar-container .nav-list li:hover a {
+header.navbar-container .nav-list li a:hover,
+header.navbar-container .nav-list li a.active {
 	background-color: #C80036;
 	color: #FFF5E1;
+/*	border: solid 2px;*/
 }
 
 main {
@@ -140,6 +142,9 @@ main .content .content-description a {
 	transition: all 0.15s ease-in;
 	margin-top: 2rem;
 	text-decoration: none;
+/*	margin-left: 25rem auto;*/
+/*	padding-right: 0 auto;*/
+/*	justify-content: right;*/
 }
 
 main .content .content-description a:hover {
@@ -289,6 +294,7 @@ padding-top: 1rem;
 .accordion {
   max-width: 800px;
 }
+
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -327,6 +333,8 @@ padding-top: 1rem;
 
 .accordion button .accordion-title {
   padding: 1em 1.5em 1em 0;
+/*  font-style: italic;*/
+	font-weight: 550;
 }
 
 .accordion button .icon {
@@ -382,8 +390,8 @@ padding-top: 1rem;
 }
 .accordion .accordion-content p {
   font-size: 1rem;
-  font-weight: 300;
-  margin: 2em 0;
+  font-weight: 450;
+/*  margin: 2em 0;*/
   color: black;
 }
 
