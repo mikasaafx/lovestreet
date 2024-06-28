@@ -55,7 +55,7 @@ transition: transform 0.3s ease-in-out;
     z-index: 1000;
 }
 
-header.navbar-container {
+header .navbar-container {
   width: 100%;
   padding-block: 1rem;
   margin-inline: auto;
@@ -68,17 +68,17 @@ header.navbar-container {
   top: 0;
 }
 
-header.navbar-container .logo a {
+header .navbar-container .logo a {
   text-decoration: none;
   font-size: 30px;
   font-weight: bold;
   color: white;
 }
 
-header.navbar-container .logo:hover {
+header .navbar-container .logo:hover {
   cursor: pointer;
 }
-header.navbar-container .nav-list ul {
+header .navbar-container .nav-list ul {
   padding-left: 0;
   display: flex;
   justify-content: center;
@@ -89,7 +89,7 @@ header.navbar-container .nav-list li {
   list-style-type: none;
 }
 
-header.navbar-container .nav-list a {
+header .navbar-container .nav-list a {
   padding: 0.5rem 1.5rem;
   border-radius: 999px;
   text-decoration: none;
@@ -99,8 +99,8 @@ header.navbar-container .nav-list a {
   transition: all 0.3s ease-in-out;
 }
 
-header.navbar-container .nav-list li a:hover,
-header.navbar-container .nav-list li a.active {
+header .navbar-container .nav-list li a:hover,
+header .navbar-container .nav-list li a.active {
   background-color: #C80036;
   color: #FFF5E1;
 /*  border: solid 2px;*/
