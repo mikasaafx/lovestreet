@@ -32,6 +32,54 @@ document.addEventListener('DOMContentLoaded', function() {
             navList.classList.remove('open');
         });
     });
+    
+    //scroll
+    const pageSections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-list ul li a');
+
+ 
+    window.addEventListener('scroll', function() {
+        let fromTop = window.scrollY + 300; 
+
+        pageSections.forEach(section => {
+            let sectionId = section.getAttribute('id');
+            let navLink = document.querySelector(`.nav-list ul li a[href="#${sectionId}"]`);
+
+            if (navLink) {
+                let sectionOffset = section.offsetTop;
+                let sectionHeight = section.offsetHeight;
+
+                if (fromTop >= sectionOffset && fromTop < sectionOffset + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                    });
+
+                    navLink.classList.add('active');
+                }
+            }
+        });
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            navLinks.forEach(navLink => {
+                navLink.classList.remove('active');
+            });
+
+            this.classList.add('active');
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+    
+    
+    
 });
 
 

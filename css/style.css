@@ -68,12 +68,16 @@ header.navbar-container {
   top: 0;
 }
 
-header.navbar-container .logo {
+header.navbar-container .logo a {
+  text-decoration: none;
   font-size: 30px;
   font-weight: bold;
   color: white;
 }
 
+header.navbar-container .logo:hover {
+  cursor: pointer;
+}
 header.navbar-container .nav-list ul {
   padding-left: 0;
   display: flex;
